@@ -5,6 +5,11 @@ h1 {
     padding-bottom:0px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+    opacity:.7;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 0px 0px 2px black, 0 0 45px black, 0 0 5px black;
+    text-align:left;
 }
 
 h3 {
@@ -14,7 +19,8 @@ h3 {
   font-family: 'Anton', sans-serif;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  color:white
+  color:white;
+  text-align:left;
 }
 
 h4 {
@@ -22,11 +28,12 @@ h4 {
   font-family: 'Anton', sans-serif;
   color:black;
   background-color:white;
-  opacity:.3;
+  opacity:.4;
   background-color:black;
   background-image:url("../img/collagewallp.jpg");
   background-attachment:fixed;
   margin-bottom:0px;
+  border-left:20px solid black;
 }
 
 h4:hover {
@@ -41,6 +48,7 @@ h4:hover {
   background-color:black;
   background-image:url("../img/collagewallp.jpg");
   background-attachment:fixed;
+  border-left:20px solid white;
 }
 
 .h5hover h5 {
@@ -52,10 +60,10 @@ h5 {
   font-size:80px;
   font-family: 'Anton', sans-serif;
   opacity:1;
-  -webkit-transition: all 1.2s ease-in-out;
-    -moz-transition: all 1.2s ease-in-out;
-    -o-transition: all 1.2s ease-in-out;
-    transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
     margin-bottom:0px;
 }
 
@@ -64,7 +72,7 @@ h5:hover {
   opacity:1;
   background-image:url("../img/collagewallp.jpg");
   background-attachment:fixed;
-  margin-right:125px;
+  margin-right:50%;
 }
 
 body {
@@ -75,12 +83,14 @@ body {
   opacity:1;
   background-image:url("../img/collagewallp.jpg");
   background-attachment:fixed;
+
 }
 
 #budgetPercent {
   opacity:1;
   background-image:url("../img/collagewallp.jpg");
   background-attachment:fixed;
+
 }
 
 #budgetPercent h2 {
@@ -106,20 +116,18 @@ h2 {
 #revenuePercent:hover h2 {
   opacity:1;
   font-family: 'Anton', sans-serif;
-  margin-left:100px;
   text-align:right;
   font-size:50px;
-  -webkit-transition: all 1.2s ease-in-out;
-    -moz-transition: all 1.2s ease-in-out;
-      -o-transition: all 1.2s ease-in-out;
-      transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in;
+    -moz-transition: all 1.2s ease-in;
+      -o-transition: all 1.2s ease-in;
+      transition: all 1.2s ease-in;
 }
 
 #budgetPercent:hover h2 {
   opacity:1;
   font-family: 'Anton', sans-serif;
-  margin-right:100px;
-  text-align:left;
+  text-align:right;
   font-size:50px;
   -webkit-transition: all 1.2s ease-in-out;
     -moz-transition: all 1.2s ease-in-out;
