@@ -6,9 +6,9 @@ h1 {
 }
 
 h3 {
-  margin-top:-35px;
+  margin-top:-15px;
   padding-top:0px;
-  font-size:80px;
+  font-size:70px;
   font-family: 'Anton', sans-serif;
 }
 
@@ -16,59 +16,124 @@ h4 {
   font-size:60px;
   font-family: 'Anton', sans-serif;
   color:black;
-  margin-right:200px;
   background-color:white;
+  opacity:.3;
+  background-color:black;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
+  margin-bottom:0px;
 }
 
 h4:hover {
-  color:white;
+  opacity:1;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+}
+
+.h5hover {
   background-color:black;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
+}
+
+.h5hover h5 {
+  opacity:0;
 }
 
 h5 {
-  margin-left:200px;
+  text-align:right;
   font-size:80px;
   font-family: 'Anton', sans-serif;
-  color:white;
-  background-color:black;
+  opacity:1;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+    margin-bottom:0px;
 }
 
 h5:hover {
   color:black;
-  background-color:white;
+  opacity:1;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
+  margin-right:125px;
 }
 
 body {
   background-color:grey;
 }
 
-#revenuePercent h2 {
-  font-family: 'Anton', sans-serif;
-  color:black;
-  margin:auto;
-  text-align:center;
-  background-color:white;
-  font-size:80px;
+#revenuepercent {
+  opacity:1;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
+}
+
+#budgetPercent {
+  opacity:1;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
 }
 
 #budgetPercent h2 {
-  font-family: 'Anton', sans-serif;
-  margin:auto;
-  text-align:center;
-  color:white;
-  background-color:black;
-    font-size:60px;
+  opacity:0;
 }
 
-#officialwebsite a {
-  color:blue;
+#revenuePercent h2 {
+  opacity:0;
+}
+
+h2 {
+  text-align:right;
+  font-size:60px;
+  font-family: 'Anton', sans-serif;
+  opacity:1;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+    margin-bottom:0px;
+}
+
+#revenuePercent:hover h2 {
+  opacity:1;
+  font-family: 'Anton', sans-serif;
+  margin-left:100px;
+  text-align:right;
+  font-size:50px;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+      -o-transition: all 1.2s ease-in-out;
+      transition: all 1.2s ease-in-out;
+}
+
+#budgetPercent:hover h2 {
+  opacity:1;
+  font-family: 'Anton', sans-serif;
+  margin-right:100px;
+  text-align:left;
+  font-size:50px;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+      -o-transition: all 1.2s ease-in-out;
+      transition: all 1.2s ease-in-out;
+}
+
+#officialwebsite  {
+  color:white;
   font-family: 'Anton', sans-serif;
   font-size:50px;
-  background-color:white;
   margin:auto;
   display:block;
   text-align:center;
-  margin-top:15px;
+  margin-top:0px;
+  opacity:.8;
+  background-image:url("../img/collagewallp.jpg");
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 
 label {
@@ -79,4 +144,12 @@ label {
 
 input {
   height:100px;
+}
+
+#officialwebsite:hover {
+  opacity:1;
+  -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+      -o-transition: all 1.2s ease-in-out;
+      transition: all 1.2s ease-in-out;
 }
