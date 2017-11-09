@@ -1,0 +1,82 @@
+h1 {
+  font-size:150px;
+  font-family: 'Anton', sans-serif;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+h3 {
+  margin-top:-35px;
+  padding-top:0px;
+  font-size:80px;
+  font-family: 'Anton', sans-serif;
+}
+
+h4 {
+  font-size:60px;
+  font-family: 'Anton', sans-serif;
+  color:black;
+  margin-right:200px;
+  background-color:white;
+}
+
+h4:hover {
+  color:white;
+  background-color:black;
+}
+
+h5 {
+  margin-left:200px;
+  font-size:80px;
+  font-family: 'Anton', sans-serif;
+  color:white;
+  background-color:black;
+}
+
+h5:hover {
+  color:black;
+  background-color:white;
+}
+
+body {
+  background-color:grey;
+}
+
+#revenuePercent h2 {
+  font-family: 'Anton', sans-serif;
+  color:black;
+  margin:auto;
+  text-align:center;
+  background-color:white;
+  font-size:80px;
+}
+
+#budgetPercent h2 {
+  font-family: 'Anton', sans-serif;
+  margin:auto;
+  text-align:center;
+  color:white;
+  background-color:black;
+    font-size:60px;
+}
+
+#officialwebsite a {
+  color:blue;
+  font-family: 'Anton', sans-serif;
+  font-size:50px;
+  background-color:white;
+  margin:auto;
+  display:block;
+  text-align:center;
+  margin-top:15px;
+}
+
+label {
+  font-family: 'Anton', sans-serif;
+  font-size:60px;
+  color:black;
+}
+
+input {
+  height:100px;
+}

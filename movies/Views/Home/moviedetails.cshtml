@@ -1,0 +1,72 @@
+@{
+  Layout = "_LayoutDetails";
+}
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="titlewrapper">
+      <h1>@Model["movie"].GetTitle()</h1>
+      <h3>@Model["movie"].GetTagline()</h3>
+    </div>
+    <div class="borderwrap">
+      <div class="detailswrapper">
+        <h4>Release Status:</h4><h5> @Model["movie"].GetStatus()</h5>
+        <h4>Release Date:</h4><h5> @Model["movie"].GetReleaseDate()</h5>
+        <h4>Runtime:</h4><h5> @Model["movie"].GetRuntime() minutes</h5>
+        <h4>User Rating:</h4><h5> @Model["movie"].GetVoteAverage()/10</h5>
+        <h4>Budget:</h4><h5>$@Model["movie"].GetBudget()</h5>
+        <h4>Revenue:</h4><h5>$@Model["movie"].GetRevenue()</h5>
+        <h4>Boxoffice Profit:</h4><h5>$@Model["movie"].FigureProfit()</h5>
+
+
+        <div id ="revenuePercent">
+        <style>
+          #revenuePercent h2 { border-left:@Model["movie"].ProfitPercentageOfRevenue()px solid green;}
+        </style>
+        <h2>Profit is  @(Model["movie"].ProfitPercentageOfRevenue())% of Revenue</h2>
+        </div>
+
+        <div id ="budgetPercent">
+        <style>
+          #budgetPercent h2 {border-left:@Model["movie"].BudgetPercentageOfRevenue()px solid red;}
+        </style>
+        <h2>Budget was @(Model["movie"].BudgetPercentageOfRevenue())% of Revenue</h2>
+        </div>
+
+        @if (@Model["movie"].GetHomepage().Length < 5)
+        {
+          <p>There is no official website for this movie.</p>
+        }
+        else if (@Model["movie"].GetHomepage().Length > 5)
+        {
+          <div id="officialwebsite">
+          <a href="@Model["movie"].GetHomepage()" target=_blank>Visit the Official Site</a>
+          </div>
+        }
+
+        <form action="@Model["movie"].GetId()" method="post">
+        <input class="userId" name="userId" type="hidden" value=@Model["User"].GetId()>
+        <label for="inputReview">Leave a Review</label>
+        <input name="inputReview" class="form-control" id="inputReview">
+        <br>
+        <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+        </div>
+        <form action='/Homepage' method="post">
+        <input class="userId" name="userId" type="hidden" value=@Model["User"].GetId()>
+        <input class="inputTitle" name="inputTitle" type="hidden" value="">
+        <input class="inputUser" name="inputUser" type="hidden" value="ω">
+        <button type="submit" class = "btn btn-dark" id="btnright">Homepage</button>
+        </form>
+
+
+        @foreach(var review in @Model["Review"])
+        {
+          <p>@review.GetUserName()</p>
+          <p>@review.GetReview()</p>
+        }
+
+        </div>
+        </div>
+        </div>
