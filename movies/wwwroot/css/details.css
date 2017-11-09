@@ -166,3 +166,12 @@ input {
       -o-transition: all 1.2s ease-in-out;
       transition: all 1.2s ease-in-out;
 }
+
+.card {
+  margin-bottom:1em;
+  width:300px;
+}
+
+.card-body {
+  height:200px;
+}
